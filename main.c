@@ -3,12 +3,8 @@
 int main() {
     int a, b, c;
 
-    printf("Enter a values:\n");
-    printf("a = ");
     scanf("%d", &a);
-    printf("b = ");
     scanf("%d", &b);
-    printf("c = ");
     scanf("%d", &c);
 
     int *pa = &a;
@@ -17,21 +13,21 @@ int main() {
 
     int soucet = *pa + *pb + *pc;
 
-    int *max = pa;
-    if(*pb > *max) {
-        max = pb;
+    int *maximum = pa;
+    if(*pb > *maximum) {
+        maximum = pb;
     }
-    if(*pc > *max) {
-        max = pc;
+    if(*pc > *maximum) {
+        maximum = pc;
     }
 
     printf("Soucet = %d\n", soucet);
-    printf("Max: %d\n", *max);
+    printf("Maximum: %d\n", *maximum);
 
     if(soucet % 2 == 0){
-        printf("Soucet je sudy!\n");
+        printf("Soucet je sudy\n");
     } else {
-        printf("Soucet je lichy!\n");
+        printf("Soucet je lichy\n");
     }
 
 return 0;
