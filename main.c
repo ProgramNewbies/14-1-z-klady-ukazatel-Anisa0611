@@ -21,7 +21,7 @@ int main() {
         maximum = pc;
     }
 
-    printf("Soucet = %d\n", soucet);
+    printf("Soucet : %d\n", soucet);
     printf("Maximum: %d\n", *maximum);
 
     if(soucet % 2 == 0){
