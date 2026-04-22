@@ -15,7 +15,7 @@ int main() {
     int *pb = &b;
     int *pc = &c;
 
-    int sum = *pa + *pb + *pc;
+    int soucet = *pa + *pb + *pc;
 
     int *max = pa;
     if(*pb > *max) {
@@ -25,13 +25,13 @@ int main() {
         max = pc;
     }
 
-    printf("Sum = %d\n", sum);
+    printf("Soucet = %d\n", soucet);
     printf("Max: %d\n", *max);
 
-    if(sum % 2 == 0){
-        printf("Sum is even!\n");
+    if(soucet % 2 == 0){
+        printf("Soucet je sudy!\n");
     } else {
-        printf("Sum is odd!\n");
+        printf("Soucet je lichy!\n");
     }
 
 return 0;
